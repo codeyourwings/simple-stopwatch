@@ -1,0 +1,159 @@
+* button {
+    transition: all 0.2s;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card {
+    background: #A8A9A8;
+    border-radius: 22.5px;
+    height: 187.5px;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+}
+
+.timerDisplay {
+    color: #FFFFFF;
+    height: 60.5px;
+    left: 14%;
+    line-height: 60.5px;
+    position: relative;
+    top: 25%;
+    width: max-content;
+}
+
+.timerControls {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    top: 35%;
+    width: 271.5px;
+}
+
+.button {
+    background: #A8A9A8;
+    border-radius: 11.25px;
+    border: 2px solid #D9D9D9;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 32.5px;
+    position: relative;
+    width: 65px;
+}
+
+.button:hover {
+    background-color: rgba(148, 149, 148, 0.15);
+    border: 2px solid rgba(197, 197, 197, 0.99);
+}
+
+.button:active {
+    background: #949594;
+    border: 2px solid #C5C5C5;
+}
+
+#start:focus, #pause:focus {
+    background: #949594;
+    border: 2px solid #C5C5C5;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20
+}
+
+#pause {
+    font-variation-settings: 
+    'FILL' 0;
+}
+
+@media (min-width: 481px) {
+    body {
+        font-size: 67px;
+    }
+
+    .card {
+        height: 250px;
+        width: 500px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .timerDisplay {
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .timerControls {
+        top: 83px;
+        width: 362px;
+    }
+
+    .button {
+        border-radius: 15px;
+        width: 88px;
+        height: 44px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 24px;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 100px;
+    }
+
+    .card {
+        height: 375px;
+        width: 750px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .timerDisplay {
+        height: 121px;
+        line-height: 121px;
+    }
+
+    .timerControls {
+        top: 125px;
+        width: 543px;
+    }
+
+    .button {
+        border-radius: 22.5px;
+        width: 130px;
+        height: 65px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 48px;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+}
